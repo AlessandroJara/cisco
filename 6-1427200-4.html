@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- carga del navbar -->
     <script src="./js/nav.js"></script>
+    <!-- carga del footer -->
+    <script src="./js/footer.js"></script>
 
     <!-- titulo de la pagina -->
     <title>Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4</title>
@@ -1415,284 +1417,235 @@
           <h2
             class="text-2xl md:text-3xl font-bold text-white bg-[#049FD9] py-4 px-6 rounded-lg shadow-md inline-block"
           >
-            Productos Relacionados: APM Cat 6
+            Tambien Disponible: AMP Cat 6
           </h2>
         </div>
 
-        <!-- Grid de productos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Producto 1 -->
-          <a
-            href="https://www.ds3comunicaciones.com/AMP/1427254-4.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500"
+        <!-- Carrousel de productos -->
+        <div class="relative px-12 md:px-16">
+          <!-- Botón Anterior -->
+          <button
+            id="carousel-prev"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label="Anterior"
           >
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img
-                  src="https://www.ds3comunicaciones.com/AMP/images/1427254-4-1.jpg"
-                  alt="Cable UTP AMP Categoria 6 Chaqueta CM 23 AWG 142725-4"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">1427254-4</h3>
-                </div>
-                <p
-                  class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
-                >
-                  Cable UTP AMP Categoria 6 Chaqueta CM 23 AWG 142725-4
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
+            <i class="fas fa-chevron-left text-xl"></i>
+          </button>
 
-          <!-- Producto 2 -->
-          <a
-            href="https://www.ds3comunicaciones.com/AMP/219585-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500"
-          >
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img
-                  src="https://www.ds3comunicaciones.com/AMP/images/219585-2_front.jpg"
-                  alt="Rollo de 305 metros Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH marca AMP - MODELO: 219585-2"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">219585-2</h3>
+          <!-- Contenedor del carrousel -->
+          <div class="overflow-hidden">
+            <div
+              id="carousel-container"
+              class="flex transition-transform duration-500 ease-in-out gap-[1.2rem]"
+            >
+              <!-- Producto 1 -->
+              <a
+                href="https://www.ds3comunicaciones.com/AMP/1427254-4.html"
+                class="carousel-item group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500 flex-shrink-0"
+              >
+                <div class="p-5 flex flex-col h-full">
+                  <div
+                    class="flex-grow flex items-center justify-center mb-4 h-40"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/1427254-4-1.jpg"
+                      alt="Cable UTP AMP Categoria 6 Chaqueta CM 23 AWG 142725-4"
+                      class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="border-t pt-4">
+                    <div
+                      class="flex justify-between flex-col items-center mb-2"
+                    >
+                      <h3 class="text-lg font-bold text-gray-800">1427254-4</h3>
+                    </div>
+                    <p
+                      class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
+                    >
+                      Cable UTP AMP Categoria 6 Chaqueta CM 23 AWG 142725-4
+                    </p>
+                    <div class="mt-4 text-center">
+                      <p class="text-2xl font-bold text-[#049FD9]">U$ 177.00</p>
+                      <p class="text-xs text-gray-500">por rollo</p>
+                    </div>
+                    <div class="text-center mt-4 text-blue-600 font-semibold">
+                      Ver Producto
+                    </div>
+                  </div>
                 </div>
-                <p
-                  class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
-                >
-                  Rollo de 305 metros Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH
-                  marca AMP - MODELO: 219585-2
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
-                </div>
-              </div>
-            </div>
-          </a>
+              </a>
 
-          <!-- Producto 3 -->
-          <a
-            href="https://www.ds3comunicaciones.com/AMP/1859345-2.html"
-            class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500"
-          >
-            <div class="p-5 flex flex-col h-full">
-              <div class="flex-grow flex items-center justify-center mb-4 h-40">
-                <img
-                  src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
-                  alt="Cable UTP AMP Categoria 6 Chaqueta LSZH 1859345-2"
-                  class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div class="border-t pt-4">
-                <div class="flex justify-between flex-col items-center mb-2">
-                  <h3 class="text-lg font-bold text-gray-800">1859345-2</h3>
+              <!-- Producto 2 -->
+              <a
+                href="https://www.ds3comunicaciones.com/AMP/219585-2.html"
+                class="carousel-item group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500 flex-shrink-0"
+              >
+                <div class="p-5 flex flex-col h-full">
+                  <div
+                    class="flex-grow flex items-center justify-center mb-4 h-40"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/219585-2_front.jpg"
+                      alt="Rollo de 305 metros Cable UTP Cat 6 de 23 AWG, CHAQUETA LSZH marca AMP - MODELO: 219585-2"
+                      class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="border-t pt-4">
+                    <div
+                      class="flex justify-between flex-col items-center mb-2"
+                    >
+                      <h3 class="text-lg font-bold text-gray-800">219585-2</h3>
+                    </div>
+                    <p
+                      class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
+                    >
+                      Rollo de 305 metros Cable UTP Cat 6 de 23 AWG, CHAQUETA
+                      LSZH marca AMP - MODELO: 219585-2
+                    </p>
+                    <div class="mt-4 text-center">
+                      <p class="text-2xl font-bold text-[#049FD9]">U$ 203.00</p>
+                      <p class="text-xs text-gray-500">por rollo</p>
+                    </div>
+                    <div class="text-center mt-4 text-blue-600 font-semibold">
+                      Ver Producto
+                    </div>
+                  </div>
                 </div>
-                <p
-                  class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
-                >
-                  Cable UTP AMP Categoria 6 Chaqueta LSZH 1859345-2
-                </p>
-                <div class="text-center mt-6 text-blue-600 font-semibold">
-                  Ver Producto
+              </a>
+
+              <!-- Producto 3 -->
+              <a
+                href="https://www.ds3comunicaciones.com/AMP/1859345-2.html"
+                class="carousel-item group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500 flex-shrink-0"
+              >
+                <div class="p-5 flex flex-col h-full">
+                  <div
+                    class="flex-grow flex items-center justify-center mb-4 h-40"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                      alt="Cable UTP AMP Categoria 6 Chaqueta LSZH 1859345-2"
+                      class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="border-t pt-4">
+                    <div
+                      class="flex justify-between flex-col items-center mb-2"
+                    >
+                      <h3 class="text-lg font-bold text-gray-800">1859345-2</h3>
+                    </div>
+                    <p
+                      class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
+                    >
+                      Cable UTP AMP Categoria 6 Chaqueta LSZH 1859345-2
+                    </p>
+                    <div class="mt-4 text-center">
+                      <p class="text-2xl font-bold text-[#049FD9]">U$ 243.00</p>
+                      <p class="text-xs text-gray-500">por rollo</p>
+                    </div>
+                    <div class="text-center mt-4 text-blue-600 font-semibold">
+                      Ver Producto
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
+
+              <!-- Producto 4 -->
+              <a
+                href="https://www.ds3comunicaciones.com/AMP/1859218-2.html"
+                class="carousel-item group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500 flex-shrink-0"
+              >
+                <div class="p-5 flex flex-col h-full">
+                  <div
+                    class="flex-grow flex items-center justify-center mb-4 h-40"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg"
+                      alt="Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH"
+                      class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="border-t pt-4">
+                    <div
+                      class="flex justify-between flex-col items-center mb-2"
+                    >
+                      <h3 class="text-lg font-bold text-gray-800">1859218-2</h3>
+                    </div>
+                    <p
+                      class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
+                    >
+                      Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH
+                    </p>
+                    <div class="mt-4 text-center">
+                      <p class="text-2xl font-bold text-[#049FD9]">U$ 229.00</p>
+                      <p class="text-xs text-gray-500">por rollo</p>
+                    </div>
+                    <div class="text-center mt-4 text-blue-600 font-semibold">
+                      Ver Producto
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Producto 5 -->
+              <a
+                href="https://www.ds3comunicaciones.com/AMP/1859381-2.html"
+                class="carousel-item group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-200 hover:border-blue-500 flex-shrink-0"
+              >
+                <div class="p-5 flex flex-col h-full">
+                  <div
+                    class="flex-grow flex items-center justify-center mb-4 h-40"
+                  >
+                    <img
+                      src="https://www.ds3comunicaciones.com/AMP/images/Caja.jpg"
+                      alt="Cable UTP AMP Categoria 6A Chaqueta LSZH IEC-60332-3"
+                      class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div class="border-t pt-4">
+                    <div
+                      class="flex justify-between flex-col items-center mb-2"
+                    >
+                      <h3 class="text-lg font-bold text-gray-800">1859381-2</h3>
+                    </div>
+                    <p
+                      class="text-sm text-gray-600 mt-2 group-hover:text-gray-800 transition-colors line-clamp-2"
+                    >
+                      Cable UTP AMP Categoria 6A Chaqueta LSZH IEC-60332-3
+                    </p>
+                    <div class="mt-4 text-center">
+                      <p class="text-2xl font-bold text-[#049FD9]">U$ 259.00</p>
+                      <p class="text-xs text-gray-500">por rollo</p>
+                    </div>
+                    <div class="text-center mt-4 text-blue-600 font-semibold">
+                      Ver Producto
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
+
+          <!-- Botón Siguiente -->
+          <button
+            id="carousel-next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-gray-100 text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label="Siguiente"
+          >
+            <i class="fas fa-chevron-right text-xl"></i>
+          </button>
         </div>
+
+        <!-- Indicadores del carousel -->
+        <div
+          id="carousel-indicators"
+          class="flex justify-center mt-6 gap-2"
+        ></div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 w-full mt-16">
-      <div class="max-w-7xl mx-auto">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8"
-        >
-          <!-- Columna 1: Logo, Sobre Nosotros -->
-          <div class="space-y-4">
-            <img
-              src="http://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
-              alt="DS3 Comunicaciones"
-              class="w-32 h-auto"
-            />
-
-            <div>
-              <h3 class="text-lg font-bold text-gray-800 mb-2">
-                Sobre Nosotros
-              </h3>
-              <p class="text-gray-600 text-sm">
-                ds3comunicaciones es líder en soluciones de redes y
-                comunicaciones, ofreciendo productos de alta calidad para
-                empresas y hogares.
-              </p>
-            </div>
-          </div>
-
-          <!-- Columna 2: Soluciones -->
-          <div class="space-y-4">
-            <h3 class="text-lg font-bold text-gray-800">Soluciones</h3>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/l-com/AccessPoint.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Access Point
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/lcom/AntenasMIMO.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Antenas MIMO
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/l-com/AntenasPanel.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Antenas de Panel
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/l-com/AntenaSectorial.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Antenas Sectoriales
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://ds3comunicaciones.com/l-com/pigtail/Pigtail.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Cable Pigtail
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/trendnet/MediaConvert.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Media Converter
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Columna 3: Soporte y más -->
-          <div class="space-y-4">
-            <h3 class="text-lg font-bold text-gray-800">Soporte</h3>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="https://www.ds3comunicaciones.com/soporte.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Soporte Técnico
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://ds3comunicaciones.com/us.html"
-                  target="_blank"
-                  class="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                >
-                  Acerca de Nosotros
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Columna 4: Contacto -->
-          <div class="space-y-4">
-            <h3 class="text-lg font-bold text-gray-800">Contacto</h3>
-            <div class="space-y-3">
-              <div class="flex items-center text-gray-600">
-                <i class="fas fa-phone-alt mr-2"></i>
-                <span>994 428 965</span>
-              </div>
-              <div class="flex items-center text-gray-600">
-                <i class="fas fa-phone-alt mr-2"></i>
-                <span>996 533 223</span>
-              </div>
-            </div>
-
-            <div class="pt-4">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">
-                Redes Sociales
-              </h3>
-              <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="text-gray-600 hover:text-blue-600 transition-colors"
-                >
-                  <i class="fab fa-facebook-f text-xl"></i>
-                </a>
-                <a
-                  href="https://wa.me/994428965?text=Hola nesecito ayuda"
-                  target="_blank"
-                  class="text-gray-600 hover:text-green-600 transition-colors"
-                >
-                  <i class="fab fa-whatsapp text-xl"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Columna 5: Correo y Horario -->
-          <div
-            class="space-y-4 sm:col-start-2 lg:col-start-4 xl:col-start-auto"
-          >
-            <div class="space-y-2">
-              <h3 class="text-lg font-bold text-gray-800">Correo</h3>
-              <a
-                href="mailto:netperu100@hotmail.com"
-                class="flex items-center text-gray-600 hover:text-blue-600 transition-colors"
-              >
-                <i class="fas fa-envelope mr-2 flex-shrink-0"></i>
-                <span class="break-all">netperu100@hotmail.com</span>
-              </a>
-            </div>
-
-            <div class="pt-4">
-              <h3 class="text-lg font-bold text-gray-800 mb-2">
-                Horario de Atención
-              </h3>
-              <p class="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
-              <p class="text-gray-600">Sábados: 9:00 - 13:00</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Derechos de autor -->
-        <div
-          class="border-t border-gray-200 mt-8 pt-6 text-center text-gray-500"
-        >
-          <p>&copy; 2025 ds3comunicaciones. Todos los derechos reservados.</p>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <!-- Scripts -->
     <script src="./js/change_tabs.js"></script>
@@ -1723,6 +1676,114 @@
             closeModal();
           }
         });
+
+      // Carousel de productos
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.getElementById("carousel-container");
+        const prevBtn = document.getElementById("carousel-prev");
+        const nextBtn = document.getElementById("carousel-next");
+        const indicatorsContainer = document.getElementById(
+          "carousel-indicators"
+        );
+
+        const items = container.querySelectorAll(".carousel-item");
+        const totalItems = items.length;
+        const itemsPerView = 4; // Cambiado de 3 a 4
+        let currentIndex = 0;
+
+        // Calcular el número total de páginas
+        const totalPages = Math.max(
+          1,
+          Math.ceil(totalItems - itemsPerView + 1)
+        );
+
+        // Establecer ancho de las cards dinámicamente
+        function setCardWidths() {
+          const containerWidth = container.parentElement.offsetWidth;
+          const gap = 24; // gap-6
+          const totalGapSpace = gap * (itemsPerView - 1); // 3 gaps para 4 items
+          const cardWidth = (containerWidth - totalGapSpace) / itemsPerView;
+
+          items.forEach((item) => {
+            item.style.width = `${cardWidth}px`;
+          });
+        }
+
+        // Crear indicadores
+        function createIndicators() {
+          indicatorsContainer.innerHTML = "";
+          for (let i = 0; i < totalPages; i++) {
+            const indicator = document.createElement("button");
+            indicator.className = `h-2 rounded-full transition-all duration-300 ${
+              i === 0 ? "w-8 bg-[#049FD9]" : "w-2 bg-gray-300"
+            }`;
+            indicator.setAttribute("aria-label", `Ir a página ${i + 1}`);
+            indicator.addEventListener("click", () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+          }
+        }
+
+        // Actualizar indicadores
+        function updateIndicators() {
+          const indicators = indicatorsContainer.querySelectorAll("button");
+          indicators.forEach((indicator, index) => {
+            if (index === currentIndex) {
+              indicator.className =
+                "h-2 w-8 rounded-full bg-[#049FD9] transition-all duration-300";
+            } else {
+              indicator.className =
+                "h-2 w-2 rounded-full bg-gray-300 transition-all duration-300";
+            }
+          });
+        }
+
+        // Actualizar posición del carousel
+        function updateCarousel() {
+          setCardWidths(); // Recalcular anchos antes de mover
+
+          const cardWidth = items[0].offsetWidth;
+          const gap = 24;
+          const offset = currentIndex * (cardWidth + gap);
+          container.style.transform = `translateX(-${offset}px)`;
+
+          // Actualizar estado de los botones
+          prevBtn.disabled = currentIndex === 0;
+          nextBtn.disabled = currentIndex >= totalPages - 1;
+
+          updateIndicadores();
+        }
+
+        // Navegar a un slide específico
+        function goToSlide(index) {
+          currentIndex = Math.max(0, Math.min(index, totalPages - 1));
+          updateCarousel();
+        }
+
+        // Evento botón anterior
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+
+        // Evento botón siguiente
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < totalPages - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+
+        // Inicializar carousel solo si hay productos
+        if (totalItems > 0) {
+          createIndicators();
+          updateCarousel();
+
+          // Actualizar en resize
+          window.addEventListener("resize", updateCarousel);
+        }
+      });
     </script>
   </body>
 </html>
